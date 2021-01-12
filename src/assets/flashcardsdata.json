@@ -1,0 +1,1225 @@
+{
+    "javascript": {
+        "content": [
+            {
+                "id": 1,
+                "question": "Co to jest scope?",
+                "answer": "Scope określa widoczność zmiennych w poszczególnych fragmentach kodu.",
+                "link": "https://dangolawski.medium.com/js1pl-scope-w-javascript-16849e332bcc"
+            },
+            {
+                "id": 2,
+                "question": "Jaki jest zakres let w JavaScript?",
+                "answer": "Przy pomocy słowa kluczowego 'let' deklarujemy lokalne zmienne w ramach bloku kodu. Ich zakres jest ograniczony do bloku kodu.",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "question": "Jaki jest zakres const w JavaScript?",
+                "answer": "Przy pomocy słowa kluczowego 'const' deklarujemy stałe. Ich zakres jest ograniczony do bloku kodu, w którym zostały zadeklarowane.",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Jaki jest zakres var w JavaScript?",
+                "answer": "Przy pomocy słowa kluczowego 'var' deklarujemy zmienne, których zakres jest ograniczony do funkcji, w której zostały one zadeklarowane lub do przestrzeni globalnej, jeżeli były zadeklarowane poza funkcją.",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "question": "Jaki zakres ma zmienna bez modyfikatora (let, const...)?",
+                "answer": "Deklaracja zmiennej bez modyfikatora jest równoważna z przypisaniem jej do globalnej przestrzeni.",
+                "link": ""
+            },
+            {
+                "id": 6,
+                "question": "Czy JavaScript wspiera dziedziczenie? Jeżeli tak to w jaki sposób?",
+                "answer": "JavaScript nie ma dedykowanego mechanizmu dla klas podobnego do tego w języku Java. W JS wszystko jest obiektem, nawet funkcje. Efektem tego jest możliwość implementacji dziedziczenia opierając się na prototypach.",
+                "link": ""
+            },
+            {
+                "id": 7,
+                "question": "Jak rozszerzyć wbudowany obiekt w JavaScript i dlaczego to nie jest dobra praktyka?",
+                "answer": "Wbudowane obiekty można rozszerzyć dzięki mechanizmowi prototypów np. dla Stringa : String.prototype.someProp = function(){}. Nie jest to dobra praktyka, ponieważ biblioteki od różnych dostawcówmogą próbować wykorzystać te same nazwy i dojdzie do konfliktów.",
+                "link": ""
+            },
+            {
+                "id": 8,
+                "question": "Jakie znasz najważniejsze biblioteki i frameworki JavaScript?",
+                "answer": "jQuery, Angular, React, Vue.js, Bootstrap, Redux, GraphQL",
+                "link": ""
+            },
+            {
+                "id": 9,
+                "question": "Co to jest tablica asocjacyjna i jak ją stworzyć w JavaScript?",
+                "answer": "Tablica asocjacyjna to struktura, która pozwala na przechowywanie par klucz-wartość. Przykładami są struktury słownika i mapy. W JavaScript tablicę asocjacyjną można zadeklarować tak : let tabas = {'key1': 'val1'}.",
+                "link": ""
+            },
+            {
+                "id": 10,
+                "question": "Jaka jest różnica między operatorem '==', a '==='?",
+                "answer": "Podwójny znak równości przed porównaniem danych próbuje przekonwertować wartości do tego samego typu, a potrójny znak równości porównuje wartość i typy.",
+                "link": ""
+            },
+            {
+                "id": 11,
+                "question": "Podaj przykłady funkcji wbudowanych w JS.",
+                "answer": "decodeURI(), decodeURIComponent(), encodeURI(), eval(), isFinite(), isNaN(), Number(), parseFloat(), parseInt(), String().",
+                "link": ""
+            },
+            {
+                "id": 12,
+                "question": "Co to jest hoisting?",
+                "answer": "Hoisting to wbudowany w JavaScript mechanizm wynoszący wszystkie deklaracje zmiennych na początek funkcji. Wynoszona jest jedynie deklaracja zmiennej, nie jej wartość.",
+                "link": ""
+            },
+            {
+                "id": 13,
+                "question": "Co to jest domknięcie (closure)?",
+                "answer": "Mechanizm domknięcia polega na zdefiniowaniu jednej funkcji wewnątrz drugiej. Wewnętrzna funkcja ma dostęp do zmiennych globalnych, swoich zmiennychlokalnych oraz do zmiennych funkcji nadrzędnej.",
+                "link": ""
+            },
+            {
+                "id": 14,
+                "question": "Co to jest funkcja natychmiastowa?",
+                "answer": "Funkcja natychmiastowa jest wywoływana automatycznie bezpośrednio po jej odczytaniu.",
+                "link": ""
+            },
+            {
+                "id": 15,
+                "question": "Do czego wykorzystywane są funkcje natychmiastowe?",
+                "answer": "Dzięki funkcjom natychmiastowym ograniczamy zakres zmiennych tylko do tej metody. Zmniejsza to ryzyko potencjalnych konfliktów z bibliotekami.",
+                "link": ""
+            },
+            {
+                "id": 16,
+                "question": "Jak w JavaScript zrobić unikatową przestrzeń nazw dla funkcji?",
+                "answer": "Można zasymulować mechanizm podobny do pakietów w Javie.",
+                "link": ""
+            },
+            {
+                "id": 17,
+                "question": "Jak zmienić kontekst wywołania funkcji?",
+                "answer": "Można to zrobić poprzez podmianę wskaźnika 'this'.",
+                "link": ""
+            },
+            {
+                "id": 18,
+                "question": "Co to są Promises?",
+                "answer": "Obiekty 'Promise' zostały wprowadzone w ECMAScript6 jako wsparcie dla operacji asynchronicznych. Przetwarzanie funkcji asynchronicznej może zakończyć się sukcesem - resolve() lub porażką - reject().",
+                "link": ""
+            },
+            {
+                "id": 19,
+                "question": "Co to jest funkcja wywołania zwrotnego (callback)?",
+                "answer": "Wykorzystanie mechanizmu callback polega na przekazaniu fragmentu funkcji jako argumentu do innej funkcji. Funkcja zwrotna może zostać wywołana lub nie w zależności od konkretnej sytuacji.",
+                "link": ""
+            },
+            {
+                "id": 20,
+                "question": "Do czego służy dyrektywa 'use strict'?",
+                "answer": "Dyrektywa 'use strict' pozwala przełączyć silnik JavaScript w 'strict mode', w efekcie czego parser JS jest bardziej rygorystyczny i zgłosi błędy, które byłyby ignorowane bez tej dyrektywy.",
+                "link": ""
+            },
+            {
+                "id": 21,
+                "question": "Jak działa timer w JavaScript?",
+                "answer": "JavaScript daje możliwość wywoływania funkcji z opóźnieniem dzięki funkcjom setTimeout() oraz setInterval(). setTimeout() wykonuje się z opóźnieniem tylko raz, a setInterval() wykonuje się cyklicznie.",
+                "link": ""
+            },
+            {
+                "id": 22,
+                "question": "Co to są Arrow Functions?",
+                "answer": "Mechanizm Arrow functions został wprowadzony dla skrócenia zapisu funkcji anonimowych. W odróżnieniu od standardowych funkcji, funkcje strzałkowe nie mają swojego 'this'.",
+                "link": ""
+            },
+            {
+                "id": 23,
+                "question": "Czym jest BOM?",
+                "answer": "BOM oznacza: Browser Model Object. Zapewnia interakcję z przeglądarką a domyślnym obiektem jest window.",
+                "link": ""
+            },
+            {
+                "id": 24,
+                "question": "Czym jest DOM? Jak używać obiektu document?",
+                "answer": "DOM oznacza: Document Object Model. Obiekt document reprezentuje dokument HTML. Może służyć do uzyskiwania dostępu i zmiany treści HTML.",
+                "link": ""
+            },
+            {
+                "id": 25,
+                "question": "Czym jest obiekt window?",
+                "answer": "Obiekt window jest tworzony automatycznie przez przeglądarkę, która reprezentuje okno przeglądarki. Służy np. do wyświetlania wyskakującego okienka dialogowego takiego jak np. okno alertu.",
+                "link": ""
+            },
+            {
+                "id": 26,
+                "question": "Jak używać obiektu history?",
+                "answer": "Obiekt history może być używany do przełączania się pomiędzy stronami na witrynie przez nas odwiedzanej. Mówimy tutaj o cofnięciu się albo przekierowaniu do następnej w ramach przeglądania bieżącej lub innej strony. Istnieją trzy metody tego obiektu: history.back(), history.forward(), history.go(number).",
+                "link": ""
+            },
+            {
+                "id": 27,
+                "question": "Jakie są typy danych w JavaScript?",
+                "answer": "W JavaScript wyróżniamy dwa następujące danych: proste, czyli string, number i boolean oraz referencyjne, które nie przechowują wartości, a referencję do wartości. Zaliczamy do nich m.in: klasy, interfejsy czy tablice.",
+                "link": ""
+            },
+            {
+                "id": 28,
+                "question": "Jak napisać kod html dynamicznie używający JavaScript?",
+                "answer": "document.getElementById('mylocation').innerHTML='<h2>some text from JavaScript</h2>';",
+                "link": ""
+            },
+            {
+                "id": 29,
+                "question": "Jak napisać normalny tekst używając JavaScript?",
+                "answer": "document.getElementById('mylocation').innerText = 'JavaScriptis OK';</h2>';",
+                "link": ""
+            },
+            {
+                "id": 30,
+                "question": "Jak tworzyć obiekty w JavaScript?",
+                "answer": "W JavaScript mamy 3 możliwości tworzenia obiektów: przez dosłowne utworzenie obiektu - przy użyciu klamr, za pomocą utworzenia instancji obiektu, za pomocą konstruktora obiektu",
+                "link": ""
+            },
+            {
+                "id": 31,
+                "question": "Jak utworzyć tablicę w JavaScript?",
+                "answer": "W JavaScript możemy zrobić to na 3 sposoby: utworzenie dosłownej tablicy – defnicja przy użyciu pustej klamry, tworząc instancję Array, przez użycie konstruktora Array",
+                "link": ""
+            },
+            {
+                "id": 32,
+                "question": "Co robi funkcja isNan()?",
+                "answer": "Funkcja isNan() zwraca true jeżeli wartość zmiennej nie jest liczbą.",
+                "link": ""
+            },
+            {
+                "id": 33,
+                "question": "Jaki jest wynik operacji 10+20+'30' w JavaScript?",
+                "answer": "3030 ponieważ 10 + 20 = 30. Jeżeli istnieje jakaś wartość liczbowa przed i po + to jest to operacja binarnego dodawania.",
+                "link": ""
+            },
+            {
+                "id": 34,
+                "question": "Jaki jest wynik operacji „10”+20+30 w JavaScript?",
+                "answer": "102030 ponieważ po ciągu znaków (10) każda z operacji + będzie traktowana jako operacja łączenia następujących po sobie znaków. Nie jest to operacja binarnego dodawnia.",
+                "link": ""
+            },
+            {
+                "id": 35,
+                "question": "Jaka jest różnica pomiędzy wartością undefined a null?",
+                "answer": "Undefined: wartość, która nie jest zdefiniowana oraz nie posiada słowa kluczowego. Null: wartość określona za pomocą słowa kluczowego null.",
+                "link": ""
+            },
+            {
+                "id": 36,
+                "question": "Jak ustawić kursor na tryb ‘wait’?",
+                "answer": "window.document.body.style.cursor = 'wait';",
+                "link": ""
+            },
+            {
+                "id": 37,
+                "question": "Czym jest negatywna nieskończoność?",
+                "answer": "Negatywna nieskończoność jest liczbą w kodzie JavaScript, którą można uzyskać dzieląc liczbę ujemną przez zero.",
+                "link": ""
+            },
+            {
+                "id": 38,
+                "question": "Jaka jest różnica pomiędzy View state oraz Session state?",
+                "answer": "View State jest związany ściśle z wyświetlaną stroną, podczas gdy Session State jest specyficzny dla użytkownika lub przeglądarki do której można uzyskać dostęp na wszystkich stronach danej witryny internetowej.",
+                "link": ""
+            },
+            {
+                "id": 39,
+                "question": "Jakie ‘wyskakujące okienka’ są dostępne w JavaScript?",
+                "answer": "okno ostrzeżenia (alert), okno potwierdzenia (confirm), okno wprowadzania danych (prompt)",
+                "link": ""
+            },
+            {
+                "id": 40,
+                "question": "Jak możemy wykryć system operacyjny używany przez klienta JavaScript?",
+                "answer": "Możemy tego dokonać przy użyciu navigator.appVersion",
+                "link": ""
+            },
+            {
+                "id": 41,
+                "question": "Jak obsługiwać wyjątki?",
+                "answer": "W tym celu należy skorzystać z bloku: try/catch. JavaScript pozwala na użycie słów kluczowych: try, catch, finally oraz throw przy obsłudze wyjątków.",
+                "link": ""
+            },
+            {
+                "id": 42,
+                "question": "Co to jest JavaScript i do czego służy?",
+                "answer": "Javascript to język programowania wykorzystywany głównie na stronach internetowych. Służy do interakcji z użytkownikiem, dynamicznego wczytywania elementów strony internetowej, manipulowania elementami strony internetowej, walidacji formularzy, tworzenia efektów wizualnych na stronie internetowej, wyświetlania interaktywnych map i grafik 2D/3D, video",
+                "link": ""
+            },
+            {
+                "id": 43,
+                "question": "Jakie są najważniejsze różnice ES6 w stosunku do ES5?",
+                "answer": "Funkcje strzałkowe () => {}, deklarowanie stałych (const), deklarowanie zmiennych blokowych (let)",
+                "link": ""
+            },
+            {
+                "id": 44,
+                "question": "Czy korzystanie z operatora '==' jest bezpieczne?",
+                "answer": "Korzystanie z tego operatora nie jest bezpieczne ze względy na brak porównywania typów zmiennych.",
+                "link": ""
+            },
+            {
+                "id": 45,
+                "question": "Wymień falsy values.",
+                "answer": "false, 0, '', null, undefined, NaN",
+                "link": ""
+            },
+            {
+                "id": 46,
+                "question": "Co będzie wynikiem działania 'true + false'?",
+                "answer": "Wynikiem tej operacji będzie 1. Przez użycie operatora '+' zachodzi koercja typów i wartość typu boolean staje się wartością typu number, co prowadzi do działania '1 + 0 = 1'.",
+                "link": ""
+            },
+            {
+                "id": 47,
+                "question": "Jaka jest różnica między funkcją strzałkową, a normalną?",
+                "answer": "W normalnej funkcji 'this' odwołuje się do kontekstu rodzica. Funkcja strzałkowa używa tzw. lexical scoping, czyli this odwołuje się do otaczającej przestrzeni. Ponadto w funkcji strzałkowej nie możemy używać 'super' oraz 'arguments'",
+                "link": ""
+            },
+            {
+                "id": 48,
+                "question": "Jak ustawić i pobrać zmienną CSS z poziomu JavaScript-u?",
+                "answer": "Aby pobrać wartość, która jest ustawiona w atrybucie style, wystarczy użyć element.style.getPropertyValue('--zmienna'). Aby zapisać wartość do zmiennej trzeba użyć: var zmienna = element.style.setProperty('--zmienna', 'wartość').",
+                "link": ""
+            }
+        ]
+    },
+    "jquery": {
+        "content": [
+            {
+                "id": 1,
+                "question": "Jaka jest różnica między zdarzeniami load i ready w jQuery?",
+                "answer": "Zdarzenie 'load' jest wywoływane jeżeli wszystkie zasoby zostaną pobrane, czyli po pobraniu również wszystkich obrazów. Zdarzenie 'ready' jest wyzwalane już w momencie, gdy można wykonywać operacje na DOM.",
+                "link": ""
+            },
+            {
+                "id": 2,
+                "question": "Czy jQuery jest językiem programowania?",
+                "answer": "jQuery nie jest językim programowania a dobrze napisanym kodem JavaScript. Pozwala na sprawne przechodzenie po kolejnych elementach dokumentu, obsługę zdarzeń, obsługę asynchronicznej interakcji użytkownika z serwerem AJAX oraz prezentację animacji.",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "question": "Jaka jest różnica pomiędzy jQuery a JavaScript?",
+                "answer": "Główną różnicą jest fakt, że JavaScript jest językiem a jQuery biblioteką zbudowaną na tym języku. jQuery upraszcza korzystanie z języka JavaScript.",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Czy jQuery zastępuje JavaScript?",
+                "answer": "Nie, jQuery nie zastępuje JavaScript. jQuery jest biblioteką napisaną na istniejącym języku skryptowym. Jest lekką biblioteką JavaScript, która służy do interakcji JavaScript oraz HTML.",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "question": "Dlaczego używamy jQuery?",
+                "answer": "jest bardzo łatwa w nauce i obsłudze, służy do tworzenia aplikacji internetowych zgodnych z przeglądarką, poprawia wydajność aplikacji, jest bardzo szybka i rozszerzalna, pozwala na pisanie minimalnej ilości kodu odpowiedzialnej za obsługę funkcji związanych z interfejsem użytkownika, zapewnia obsługę wielu przeglądarek. Ostatni punkt nie jest niestety taki oczywisty – dotyczy to głównie pracy nad komercyjnym projektami w korporacjach, które potrafią w obecnych czasach wspierać przeglądarki pokroju IE8 wymagając przy tym spełnienia standardów CVE.",
+                "link": ""
+            },
+            {
+                "id": 6,
+                "question": "Jakich metod używamy do zaprezentowania 'efektów'?",
+                "answer": "Służą do tego poniższe metody: show(), hide(), toggle(), fadeIn(), fadeOut().",
+                "link": ""
+            },
+            {
+                "id": 7,
+                "question": "Czy jQuery HTML może działać zarówno dla dokumentu HTML jak i XML?",
+                "answer": "Nie, jQuery HTML działa tylko dla dokumentu HTML. Nie jest w stanie obłużyć dokumentów XML.",
+                "link": ""
+            },
+            {
+                "id": 8,
+                "question": "Czym jest $() w bibliotece jQuery?",
+                "answer": "$() jest aliasem funkcji jQuery(). Służy on do zawijania/otoczenia (wrapper) dowolnego obiektu obiektem jQuery, który później ułatwia wywoływanie różnych obiektów jQuery zdefiniowanymi metodami. Prostym przykładem może być przekazanie ciągu znaków do funkcji $() i zwrócenie obiektu jQuery zawierającego tablicę wszystkich pasujących obiektów DOM.",
+                "link": ""
+            },
+            {
+                "id": 9,
+                "question": "Biblioteka jQuery jest używana do działania ze stroną klienta czy serwera?",
+                "answer": "Jest to biblioteka działająca po stronie klienta.",
+                "link": ""
+            },
+            {
+                "id": 10,
+                "question": "Gdzie jest punkt startowy wykonania kodu jQuery?",
+                "answer": "Funkcja $(document).ready() jest punktem startowym wykonywania kodu jQuery. Jest on wykonywany po załadowaniu DOM.",
+                "link": ""
+            },
+            {
+                "id": 11,
+                "question": "Czy na danej stronie możesz użyć wielokrotnie document.ready()?",
+                "answer": "Tak. Funkcja document.ready() może być użyta wielokrotnie na tej samej stronie.",
+                "link": ""
+            },
+            {
+                "id": 12,
+                "question": "Jaka jest różnica pomiędzy metodami ‘find’ a ‘children’?",
+                "answer": "Find służy do znajdowania wszystkich poziomów w drzewie DOM, natomiast metoda chilrden służy do znajdowania pojedynczego poziomu w drzewie DOM.",
+                "link": ""
+            },
+            {
+                "id": 13,
+                "question": "Czym jest CDN?",
+                "answer": "CDN oznacza Content Distribution Network. Jest to duży, rozproszony system serwerów wdrożony w wielu centrach danych.",
+                "link": ""
+            },
+            {
+                "id": 14,
+                "question": "Jaki jest cel CDN i zalety korzystania z niego?",
+                "answer": "Głównym celem CDN jest dostarczenie użytkownikom końcowym treści o wysokiej dostępności i wydajności. Zalety korzystania z CDN: zmniejsza obciążenie serwera, oszczędza przepustowość. Framework jQuery jest ładowany szybciej z CDN, biblioteka jQuery będzie w pamięci przeglądarki użytkownika jeżeli ten odwiedzi inną witrynę, którą odnosi się do tej samej biblioteki. Nie będzie potrzebny ponowego ściągania jQuery.",
+                "link": ""
+            },
+            {
+                "id": 15,
+                "question": "Jakie znasz selektory w jQuery? Jakie są ich typy?",
+                "answer": "Jeżeli chcesz pracować z jakimkolwiek elementem na stronie internetowej, w pierwszej kolejności musisz go znaleźć. Selektory są używane do znajdowania elementów HTML w jQuery. Istnieje wiele rodzajów selektorów a niektóre z nich to: Name: używany jest do odnalezienia wszystkich pasujących elementów pasujących do wskazanej 'nazwy', #ID: służy do wybierania pojedynczego elementu pasującego do wskazanego ‘identyfikatora’, Class: służy do odnalezienia wszystkich elementów pasujących do nazwy danej klasy, Uniwersalny (*) służy do wybierania wszystkich elementów dostępnych w DOM, Attribute: służy do wskazywania elementów na podstawie wartości ich atrybutu.",
+                "link": ""
+            },
+            {
+                "id": 16,
+                "question": "Do czego służy filtr w jQuery?",
+                "answer": ":filter służy do filtrowania określonych wartości z obiektu. Filtruje wynik pierwotnego zapytania do określonych elementów.",
+                "link": ""
+            },
+            {
+                "id": 17,
+                "question": "Jakie są różne typy selektorów w jQuery?",
+                "answer": "Istnieją trzy typy selektrów w jQuery: selektor CSS, selektor niestandardowy, selektor XPath",
+                "link": ""
+            },
+            {
+                "id": 18,
+                "question": "Jaka jest różnica pomiędzy selektorem Id a selektorem klasy?",
+                "answer": "Pierwszy z nich używa identyfikatora a drugi klasy do wskazania konkretnego elementu. Jeżeli chcesz wybrać tylko jeden element użyj selektora ID. Jeżeli chcesz wybrać grupę elementów, posiadających tę samą klasę, skorzystaj z selektora klasy.",
+                "link": ""
+            },
+            {
+                "id": 19,
+                "question": "Jak dodać i usunąć klasę CSS z elementu używając jQuery?",
+                "answer": "W celu dodania klasy CSS do elementu możesz skorzystać z metody addClass(). Jeżeli chcesz usunąć klasę CSS z elementu możesz skorzystać z removeClass().",
+                "link": ""
+            },
+            {
+                "id": 20,
+                "question": "Jaka jest różnica pomiędzy ‘prop’ a ‘attr’?",
+                "answer": "attr(): pobiera wartość atrybutu dla pierwszego elementu znalezionego w grupie dopasowanych elementów. prop(): pobiera wartość właściwości dla pierwszego element znalezionego w grupie dopasowanych elementów.",
+                "link": ""
+            },
+            {
+                "id": 21,
+                "question": "Jakie są dwa typy CDN?",
+                "answer": "Możemy wyróżnić dwa rodzaje CDN: Microsoft: ładuje jQuery z AJAX CDN, Google: ładuje jQuery z API bibliotek Google",
+                "link": ""
+            },
+            {
+                "id": 22,
+                "question": "Do czego służy funkcja animacji?",
+                "answer": "Funkcja animacji służy do zastosowania niestandardowego efektu 'przejścia' na standardowych elementach. Składnia: $(selector).animate({params}, [duration], [easing], [callback]), gdzie: param określa właściwość CSS na której chcemy zastosować animację, duration określa czas trwania animacji. Możemy użyć następujących wartości: slow, fast, normal lub czas wyrażony w milisekundach, easing to ciąg znaków określający łańcuch przejścia, callback to funkcja, którą chcemy uruchomić po zakończeniu animacji.",
+                "link": ""
+            },
+            {
+                "id": 23,
+                "question": "Jak możesz zablokować wykonywanie animacji w jQuery?",
+                "answer": "Aby wyłączyć animację w jQuery należy właściwość jQuery.fx.off ustawić na wartość true.",
+                "link": ""
+            }
+        ]
+    },
+    "html": {
+        "content": [
+            {
+                "id": 1,
+                "question": "Czym różni się znacznik header od h1?",
+                "answer": "Header jest to jeden ze znaczników semantycznych, za jego pomocą możemy utworzyć nagłówek. Który np. ma w sobie h1. Można też w nim umieścić nawigacje. Natomiast h1 służy do tworzenia nagłówka w formie tekstu np. tytuł artykułu, lub sekcji.",
+                "link": ""
+            },
+            {
+                "id": 2,
+                "question": "Do czego służy znacznik main?",
+                "answer": "Jest to znacznik, który służy do umieszczenia głównej części strony. Powinien być tylko jeden taki znacznik na stronie.",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "question": "Wymień nowe tagi w HTML5.",
+                "answer": "section, article, header, footer, main, video, audio, strong",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Jak jest różnica między div a span?",
+                "answer": "div jest to element blokowy, którego szerokość wynosi 100% natomiast tag span jest to element inline który można np. wstawić wewnątrz tekstu. Będzie się on zachować jak tekst. Będzie można go ostylować inaczej nadając mu np. kolor za pomocą CSS.",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "question": "Wymień technologie występujące w HTML5",
+                "answer": "Canvas, WebGL, History API, Storage, Drag & Drop, content editable, Wysyłanie wiadomości (czyli postMessage i zdarzenie message), tagi audio i video.",
+                "link": ""
+            },
+            {
+                "id": 6,
+                "question": "Jak zapisać kodowanie znaków i jakie najczęściej się stosuje?",
+                "answer": "Najczęściej stosuje się UTF-8, czyli kodowanie znaków Unicode. Na stronie wystarczy dodać: <meta charset='utf8'/>",
+                "link": ""
+            },
+            {
+                "id": 7,
+                "question": "Jak należy wskazać przeglądarce, że strona jest zapisana w HTML5?",
+                "answer": "<!DOCTYPE html>",
+                "link": ""
+            },
+            {
+                "id": 8,
+                "question": "Czym się różni ol od ul?",
+                "answer": "ol, czyli ordered list to lista z numerami. ul, czyli unordered list to lista puntów",
+                "link": ""
+            },
+            {
+                "id": 9,
+                "question": "Do czego służy atrybut role?",
+                "answer": "Jest to znacznik, który określa znaczenie elementu. Głównie do celów dostępności. Jest częścią specyfikacji ARIA. Został też dodany do HTML5.",
+                "link": ""
+            },
+            {
+                "id": 10,
+                "question": "Jak używać zewnętrznych plików JavaScript?",
+                "answer": "Należy je dodać za pomocą tagu 'script' <script type='text/javascript' src='message.js'></script>",
+                "link": ""
+            },
+            {
+                "id": 11,
+                "question": "Jak dodać swój własny atrybut, aby był zgodny z HTML5?",
+                "answer": "Do html można dodawać dowolne atrybuty, przeglądarki nie będą miały z nimi problemu. Ale aby być jednak zgodnym z HTML5, należy użyć atrybutu data-nazwa='wartość'. Taki atrybut można potem pobrać za pomocą element.dataset.nazwa.",
+                "link": ""
+            },
+            {
+                "id": 12,
+                "question": "Jak utworzyć link do elementu tej samej strony?",
+                "answer": "Za pomocą atrybutu id oraz linku (kotwicy).'\n'<a href='#foo'>p</p>'\n'<p id='foo'>Jakiś Text</p>",
+                "link": ""
+            },
+            {
+                "id": 13,
+                "question": "Jak ograniczyć liczbę znaków w polu tekstowym?",
+                "answer": "Służy do tego atrybut maxlength. wystarczy np. ustawić maxlength='100'.",
+                "link": ""
+            },
+            {
+                "id": 14,
+                "question": "Jak dodać walidacje za pomocą samego HTML?",
+                "answer": "<form>'\n'   <input required pattern='x{2}y{2}'/>'\n'</form>",
+                "link": ""
+            },
+            {
+                "id": 15,
+                "question": "Co to jest Persistent Local Storage?",
+                "answer": "Przy użyciu tej funkcjonalności aplikacje webowe mogą przechowywać dane lokalnie bez użycia przeglądarki użytkownika. Wcześniej dane te musiały być przechowywane w ciasteczkach, włączając w to każde pojedyncze żądanie. Lokalne przechowywanie pamięci jest bezpieczniejsze, pozwala na przechowywanie większej ilości danych bez negatywnego wpływu na wydajność strony internetowej.",
+                "link": ""
+            },
+            {
+                "id": 16,
+                "question": "Co to jest WebSocket?",
+                "answer": "Jest to następna generacja dwukierunkowej komunikacji dla aplikacji internetowych.",
+                "link": ""
+            },
+            {
+                "id": 17,
+                "question": "Za co odpowiada Server-Sent Event?",
+                "answer": "HTML5 wprowadza zdarzenia, które przechodzą z serwera WWW do przeglądarki internetowej.",
+                "link": ""
+            },
+            {
+                "id": 18,
+                "question": "Za co odpowiada Canvas w HTML5?",
+                "answer": "obsługuje dwuwymiarową powierzchnię rysunkową, które może zostać oprogramowana przy użyciu JavaScript.",
+                "link": ""
+            },
+            {
+                "id": 19,
+                "question": "Czy HTML jest wstecznie kompatybilny ze starszymi przeglądarkami?",
+                "answer": "Tak. HTML5 został zaprojektowany tak, aby w miarę możliwości, być kompatybilny ze starszymi przeglądarkami. Nowe funkcjonalności opierają się na tych istniejących i pozwalają na wyświetlenie awaryjnej zawartości dla starszych przeglądarek.",
+                "link": ""
+            },
+            {
+                "id": 20,
+                "question": "Czy dla znaczników HTML liczy się wielkość liter?",
+                "answer": "Nie, nie liczy się.",
+                "link": ""
+            },
+            {
+                "id": 21,
+                "question": "Jaki jest cel używania sekcji 'section' w HTML5?",
+                "answer": "Znacznik ten reprezentuje rozdział dokumentu lub sekcję aplikacji. Może być użyty razem ze znacznikami h1-h6, które wskazują na strukturę dokumentu.",
+                "link": ""
+            },
+            {
+                "id": 22,
+                "question": "Jaki jest cel używania sekcji 'article' w HTML5?",
+                "answer": "Znacznik ten reprezentuje niezależny kawałek dokumentu tak jaki wpis na bloku czy artykuł w gazecie.",
+                "link": ""
+            },
+            {
+                "id": 23,
+                "question": "Jaki jest cel używania sekcji 'aside' w HTML5?",
+                "answer": "Znacznik ten reprezentuje fragment zawartości, która jest tylko nieznacznie związana z resztą strony.",
+                "link": ""
+            },
+            {
+                "id": 24,
+                "question": "Jaki jest cel używania sekcji 'header' w HTML5?",
+                "answer": "Znacznik reprezentuje nagłówek sekcji.",
+                "link": ""
+            },
+            {
+                "id": 25,
+                "question": "Jaki jest cel używania sekcji 'footer' w HTML5?",
+                "answer": "Znacznik ten reprezentuje stopkę dla sekcji i może zawierać informacje o autorze, prawach autorskich, itd.",
+                "link": ""
+            },
+            {
+                "id": 26,
+                "question": "Jaki jest cel używania sekcji 'nav' w HTML5?",
+                "answer": "Znacznik ten reprezentuje cześć dokumentu, która jest odpowiedzialna za nawigację.",
+                "link": ""
+            },
+            {
+                "id": 27,
+                "question": "Jaki jest cel używania sekcji 'dialog' w HTML5?",
+                "answer": "Znacznik ten może być użyty do oznaczenia rozmowy.",
+                "link": ""
+            },
+            {
+                "id": 28,
+                "question": "Jaki jest cel używania sekcji 'figure' w HTML5?",
+                "answer": "Znacznik ten może być używany razem ze znacznikiem 'caption' do prezentacji zawartości, np. obrazek lub video z podpisem.",
+                "link": ""
+            },
+            {
+                "id": 29,
+                "question": "Czym są atrybuty niestandardowe w HTML5?",
+                "answer": "Atrybuty niestandardowe rozpoczynają się od 'data-' i będą nazywane na podstawie preferencji programisty.",
+                "link": ""
+            },
+            {
+                "id": 30,
+                "question": "Czym jest Web Forms 2.0?",
+                "answer": "Jest to rozszerzenie funkcji formularzy z HTML4. Elementy formularza oraz atrybuty w HTML5 wprowadzają większy zakres semantyki niż miało to miejsce w HTML4 oraz usuwają potrzebę pisania długich skryptów oraz stylowania elementów, które było wymagane w HTML4.",
+                "link": ""
+            },
+            {
+                "id": 31,
+                "question": "Jaki jest cel używania kontrolki 'datetime' w Web Form 2.0?",
+                "answer": "Kontrolka ta reprezentuje datę i czas (rok, miesiąc, dzień, godzinę, minutę, sekundę oraz ułamki sekund) zgodnie z normą ISO 8601 wraz ze strefą czasową ustawioną na UTC (uniwersalny czas koordynowany – uwzględnia nieregularność ruchu obrotowego ziemi i koordynowany względem czasu słonecznego).",
+                "link": ""
+            },
+            {
+                "id": 32,
+                "question": "Jaki jest cel używania kontrolki 'datetime-local' w Web Form 2.0?",
+                "answer": "Kontrolka ta reprezentuje datę i czas (rok, miesiąc, dzień, godzinę, minutę, sekundę oraz ułamki sekund) zgodnie z normą ISO 8601 bez uwzględnienia strefy czasowej.",
+                "link": ""
+            },
+            {
+                "id": 33,
+                "question": "Jaki jest cel używania kontrolki 'date' w Web Form 2.0?",
+                "answer": "Kontrolka te reprezentuje datę (rok, miesiąc, dzień) zgodnie z normą ISO 8601.",
+                "link": ""
+            },
+            {
+                "id": 34,
+                "question": "Jaki jest cel używania kontrolki 'month' w Web Form 2.0?",
+                "answer": "Kontrolka ta reprezentuje datę składającą się z roku obraz miesiąca zgodnie z normą ISO 8601.",
+                "link": ""
+            },
+            {
+                "id": 35,
+                "question": "Jaki jest cel używania kontrolki 'week' w Web Form 2.0?",
+                "answer": "Kontrolka ta reprezentuje datę składającą się z roku obraz numeru tygodnia zgodnie z normą ISO 8601.",
+                "link": ""
+            },
+            {
+                "id": 36,
+                "question": "Jaki jest cel używania kontrolki 'time' w Web Form 2.0?",
+                "answer": "Kontrolka te reprezentuje czas (godziny, minuty, sekundy, ułamki sekund) zgodnie z normą ISO 8601.",
+                "link": ""
+            },
+            {
+                "id": 37,
+                "question": "Jaki jest cel używania kontrolki 'number' w Web Form 2.0?",
+                "answer": "Kontrolka akceptuje jedynie wartości numeryczne. Atrybut określający precyzję ustawiony jest domyślnie na 1.",
+                "link": ""
+            },
+            {
+                "id": 38,
+                "question": "Jaki jest cel typu 'range' w Web Form 2.0?",
+                "answer": "Określa jaki zakres wartości liczbowych może być używany w polach wejściowych.",
+                "link": ""
+            },
+            {
+                "id": 39,
+                "question": "Jaki jest cel używania kontrolki 'email' w Web Form 2.0?",
+                "answer": "Kontrolka ta akceptuje tylko adresy email. Typ jest używany do polach wejściowych, które powinny zawierać jedynie adres email. Jeżeli użytkownik spróbuje przesłać zwykły tekst wyświetli się informacja, że wymagany jest adres email w formacie email@example.com.",
+                "link": ""
+            },
+            {
+                "id": 40,
+                "question": "Jaki jest cel używania kontrolki 'url' w Web Form 2.0?",
+                "answer": "Kontrolka ta akceptuje tylko adresy URL. Typ jest używanych na polach wejściowych, które powinny zawierać jedynie adres URL. Jeżeli użytkownik spróbuje przesłać zwykły tekst wyświetli się informacja, że wymagany jest adres URL w formacie http://www.example.com lub http://example.com.",
+                "link": ""
+            },
+            {
+                "id": 41,
+                "question": "Jaki jest cel używania znacznika 'output' w HTML5?",
+                "answer": "W HTML5 został przedstawiony nowy element <output>, który jest używany do wyświetlania rezultatu różnych operacji, np. rezultat zwrócony przez skrypt.",
+                "link": ""
+            },
+            {
+                "id": 42,
+                "question": "Jaki jest cel używania atrybutu 'placeholder' w HTML5?",
+                "answer": "W HTML5 został przedstawiony nowy atrybut ‘placeholder’. Atrybut ten wraz z kontrolkami input oraz textarea pozwala na wyświetlenie wskazówki użytkownikowi co może być wprowadzone w określone pole. Tekst zastępczy nie może zawierać znaków ucieczki.",
+                "link": ""
+            },
+            {
+                "id": 43,
+                "question": "Jaki jest cel używania atrybutu 'autofocus' w HTML5?",
+                "answer": "Atrybut ten pozwala ustawić 'focus' jednego konkretnego elementu po załadowaniu dokumentu.",
+                "link": ""
+            },
+            {
+                "id": 44,
+                "question": "Jaki jest cel używania atrybutu 'required' w HTML5?",
+                "answer": "W HTML5 został przedstawiony nowy atrybut 'required', który wymaga aby dana kontrolka miała wprowadzoną wartość, np. przed wysłaniem formularza.",
+                "link": ""
+            },
+            {
+                "id": 45,
+                "question": "Czy w HTML5 można używać znacznika ‘svg’ bez dodatkowych pluginów?",
+                "answer": "Tak. HTML5 pozwala na bezpośrednie użycie znacznika 'svg'.",
+                "link": ""
+            },
+            {
+                "id": 46,
+                "question": "Jakie są wady ciasteczek?",
+                "answer": "Ciasteczka mają następujące wady: ciasteczka są dołączone do każdego żądania HTTP a tym samym prowadzą do spowolnienia aplikacji internetowej przez przekazywanie tych samych danych;ciasteczka są dołączone do każdego żądania HTTP a tym samym wysyłamy nieszyfrowane dane przez internet; ciasteczka są ograniczone do około 4KB. Liczba ta nie wystarczy do przechowywania wszystkich niezbędnych danych.",
+                "link": ""
+            },
+            {
+                "id": 47,
+                "question": "Co masz na myśli mówiąc o przechowywaniu sesji w HTML5?",
+                "answer": "HTML5 przedstawił nowy atrybut sessionStorage , który może być wykorzystywany przez strony aby dodawać dane do sesji i będzie dostępny dla każdej strony otwartej w tym oknie, tj. jak tylko zamkniesz okno sesja będzie pusta.",
+                "link": ""
+            },
+            {
+                "id": 48,
+                "question": "Co masz na myśli mówiąc o lokalnym przechowywaniu danych w HTML5?",
+                "answer": "HTML5 wprowadził nowy atrybut localStorage , który może być wykorzystywany do dostępu do lokalnej pamięci przez strony internetowe bez żadnych ograniczeń czasowych oraz będzie dostępna zawsze, kiedy będziesz chciał skorzystać z tej strony.",
+                "link": ""
+            },
+            {
+                "id": 49,
+                "question": "Kiedy dane sesji zostaną usunięte?",
+                "answer": "Session Storage Data (dane przechowywane w sesji) będą usuwane przez przeglądarkę po tym jak sesja zostanie zakończona.",
+                "link": ""
+            },
+            {
+                "id": 50,
+                "question": "Kiedy dane przechowywane lokalnie zostaną skasowane?",
+                "answer": "Lokalne przechowywanie danych nie ma ograniczeń czasowych. Aby usunąć dane przechowywane lokalnie należy wywołać localStorage.remove(‘klucz’), gdzie ‘klucz’ jest kluczem wartości, którą chcesz usunąć. Jeżeli chcesz wyczyścić sesję należy wywołać localStorage.clear().",
+                "link": ""
+            },
+            {
+                "id": 51,
+                "question": "Czym są zdarzenia serwera WWW w HTML5?",
+                "answer": "Wraz z HTML5, WHATWG Web Applications 1.0 wprowadziło zdarzenia, które przepływają pomiędzy serwerem WWW a przeglądarką internetową. Zastosowanie zdarzeń pozwala na otwarcie stałego połączenia z serwerem, wysłania danych do klienta, kiedy nowe dane są dostępne, eliminując przy tym potrzebę ciągłego odpytywania. SSE (Server-Sent Events) standaryzuje jak przesyłamy strumień danych z serwera do klienta.",
+                "link": ""
+            },
+            {
+                "id": 52,
+                "question": "Jak korzystać ze zdarzeń serwera WWW w HTML5?",
+                "answer": "Aby korzystać z tych zdarzeń w aplikacji internetowej należy dodać element <eventsource> do dokumentu, tj. strony internetowej. Atrybut src elementu powinien wskazywać na adres URL, który powinien zapewnić stałe połączenie HTTP wysyłające strumień danych zawierający zdarzenie. Adres URL wskazywałby na skrypt, który powinien dbać o stałe wysyłanie danych o zdarzeniach.",
+                "link": ""
+            },
+            {
+                "id": 53,
+                "question": "Czym jest Web Socket?",
+                "answer": "Web sockets to technologia następnej generacji do dwukierunkowej komunikacji dla aplikacji internetowych, która działa na jednym gnieździe i jest wystawiona za pomocą interfejsu napisanego w JavaScript dla przeglądarek zgodnych z HTML5. Po uzyskaniu połączenia gniazda z serwerem WWW, możesz wysyłać dane z przeglądarki do serwera po wywołaniu metody send() oraz odbierać dane z serwera dzięki obsłudze zdarzenia onmessage.",
+                "link": ""
+            },
+            {
+                "id": 54,
+                "question": "Jaki jest cel używania atrybutu Socket.readyState?",
+                "answer": "Atrybut ten jest atrybutem tylko do odczytu i określa stan połączenia. Może mieć jedną z poniższych wartości: wartość 0 informuje, że połączenie nie zostało jeszcze ustanowione; wartość 1 informuje, że połączenie zostało ustanowione i komunikacja jest możliwa; wartość 2 informuje, że połączenie przechodzi przez stan zamykania; wartość 3 informuje, że połączenie zostało zamknięte lub nie może być otwarte.",
+                "link": ""
+            },
+            {
+                "id": 55,
+                "question": "Jaki jest celu używania atrybutu Socket.bufferedAmount?",
+                "answer": "Atrybut ten jest atrybutem tylko do odczytu i określa liczbę bajtów tekstów formatowanych w zapisie UTF-8, które zostały umieszczone w kolejce po wywołaniu metody send().",
+                "link": ""
+            },
+            {
+                "id": 56,
+                "question": "Jaki jest cel używania znacznika ‘canvas’ w HTML5?",
+                "answer": "Element języka HTML5 pozwala w łatwy i skuteczny sposób na rysowanie przy użyciu JavaScript. Może być używany do rysowania wykresów, tworzenia kompozycji graficznych lub do (co nie jest takie łatwe) tworzenia animacji.",
+                "link": ""
+            },
+            {
+                "id": 57,
+                "question": "Jaki jest cel używania znacznika ‘audio’ w HTML5?",
+                "answer": "HTML5 wspiera znacznik <audio>, który może być używany do odtwarzania dźwięku w dokumentach html lub xhtml. Głównie używane formaty audio to ogg, mp3 oraz wav. Element audio pozwala na zastosowanie wielu elementów źródłowych a przeglądarka użyje pierwszego rozpoznanego formatu – kwestia kompatybilności.",
+                "link": ""
+            },
+            {
+                "id": 58,
+                "question": "Jaki jest cel używania znacznika ‘video’ w HTML5?",
+                "answer": "HTML5 wspiera znacznik <video>, który może być używany do odtwarzania plików video w dokumentach HTML oraz XHTML. Głównie używane formaty video to ogg oraz mpeg4. Element video pozwala na zastosowanie wielu elementów źródłowych a przeglądarka użyje pierwszego rozpoznanego formatu – kwestia kompatybilności.",
+                "link": ""
+            },
+            {
+                "id": 59,
+                "question": "Czym jest API geolokalizacji w HTML5?",
+                "answer": "Geolokalizacja pozwala na udostępnienie swojej lokalizacji. JavaScript jest zdolny do przechwycenia długości oraz szerokości geograficznej, które mogą być wysłane do serwera WWW a następnie użytkownikowi może np. zostać zwrócona lista lokalnych firm wraz z ich lokalizacją na mapie. Obecnie większość przeglądarek oraz urządzeń mobilnych używa geolokalizacji. API geolokalizacji współpracuje z nową właściwością obiektu navigator.",
+                "link": ""
+            },
+            {
+                "id": 60,
+                "question": "Jaki jest cel używania metody getCurrentPosition() obiektu geolokalizacji w HTML5?",
+                "answer": "Metoda ta pobiera aktualną lokalizację geograficzną użytkownika.",
+                "link": ""
+            },
+            {
+                "id": 61,
+                "question": "Jaki jest cel używania metody watchPosition() obiektu geolokalizacji w HTML5?",
+                "answer": "Metoda ta pobiera okresowe aktualizacje zmiany lokalizacji geograficznej użytkownika.",
+                "link": ""
+            },
+            {
+                "id": 62,
+                "question": "Jaki jest cel używania metody clearPosition() obiektu geolokalizacji w HTML5?",
+                "answer": "Metoda ta odwołuje aktualizacje lokalizacji geograficznej związanej z wywołaniem metody watchPosition().",
+                "link": ""
+            }
+        ]
+    },
+    "css": {
+        "content": [
+            {
+                "id": 1,
+                "question": "Wymień 4 selektory, które zaznaczają element z konkretnym indeksem.",
+                "answer": ":nth-child(1) - wybiera kolejny element, :nth-last-child(1) - kolejny element od końca, :nth-of-type(1) - kolejny element danego typu np. div:nth-of-type(1) zaznaczy pierwszy div, nawet jeśli jest przed nim header, :nth-last-of-type(1) - to samo co poprzednie, ale od końca. Oprócz indeksu liczbowego, można także wstawiać literę n, za pomocą której można opisać proste równania, np, 3n zaznaczy co 3 element.",
+                "link": ""
+            },
+            {
+                "id": 2,
+                "question": "Jak wybrać pierwsze 10 elementów na liście?",
+                "answer": "Należy użyć selektora nth-child oraz równania -n+10: ul li:nth-child(-n+10) {}. -n oznacza wszystkie elementy przed pierwszym, a +10 przesuwa cały zakres o 10 elementów do przodu.",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "question": "Jak zaznaczyć parzyste elementy na liście?",
+                "answer": "Należy użyć ul li:nth-child(even) {} lub ul li:nth-child(2n) {}",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Jak sprawdzić czy zmienne css (ang. custom properties) lub dowolna inna właściwość jest obsługiwana przez przeglądarkę?",
+                "answer": "Można użyć reguły @support: @supports (--css: variables) {}",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "question": "Jak używać zmiennych CSS z liczbowymi wartościami?",
+                "answer": "Najlepiej przypisać do nich wartości bez jednostki i użyć calc do skonwertowania ich na daną jednostkę. Robi się tak ponieważ konwersja w drugą stronę jest niemożliwa:.item.selected {'\n'  --width: 200;'\n'}'\n'.item {'\n'   width: calc(var(--width, 100) * 1px);'\n'}",
+                "link": ""
+            },
+            {
+                "id": 6,
+                "question": "Jak utworzyć selektor atrybutu, który nie jest wrażliwy na wielkość liter",
+                "answer": "li[data-id='foo' i] {}",
+                "link": ""
+            },
+            {
+                "id": 7,
+                "question": "Co to model pudełkowy (box-model)?",
+                "answer": "",
+                "link": ""
+            }
+        ]
+    },
+    "angular": {
+        "content": [
+            {
+                "id": 1,
+                "question": "Jakie są sposoby przekazywania danych pomiędzy komponentami",
+                "answer": "dekoratory @Input, @Output;'\n'serwisy dwukierunkowe z użyciem RxJS Subjects",
+                "link": ""
+            },
+            {
+                "id": 2,
+                "question": "Jak wygląda cykl życia komponentu?",
+                "answer": "constructor, ngOnChanges, ngOnInit, ngDoCheck, ngOnDestroy, ngAfterContentInit, ngAfterContentChecked, ngAfterViewInit, ngAfterViewChecked",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "question": "Czym jest RxJS",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Opisz Template Driven Forms",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "question": "Opisz Reactive Forms",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 6,
+                "question": "Czym jest aplikacja CRUD",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 7,
+                "question": "Czym jest inferencja typów w TypeScript",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 8,
+                "question": "Opisz wzorzec Dependency Injection",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 9,
+                "question": "Jak testować komponenty i serwisy",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 10,
+                "question": "Jakie tricki pozwalają poprawić performance aplikacji",
+                "answer": "strategia OnPush;'\n'odpinanie się od Angular Zone;'\n'ręczne sterowanie detekcją za pomocą ChangeDetector;'\n'@Input jako setter zamiast hooku OnChanges;'\n'lazy loading widoków",
+                "link": ""
+            },
+            {
+                "id": 11,
+                "question": "Kiedy korzystać ze switchMap i co to jest?",
+                "answer": "forkJoin() - co to jest i kiedy korzystać?",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "jak stworzyć własne synchroniczne i asynchroniczne walidatory",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Jak radzić sobie z autoryzacją w aplikacji i ochroną ścieżek dostępu do poszczególnych widoków",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Czym w TypeScript jest intersection type?",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Czym w TypeScript jest union type?",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Opisz typy generyczne w TypeScript",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Jak dostarczać dane do widoku przed aktywacją widoku?",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Jak poprawnie manipulować drzewem DOM",
+                "answer": "Renderer2",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Co powinno być wydzielane do serwisów, a co może zostać w klasie komponentu?",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Jakie są różnice pomiędzy komponentami a dyrektywami?",
+                "answer": "Dyrektywa to mechanizm, za pomocą którego dołączamy zachowanie do elementów DOM, składający się z typów strukturalnych, atrybutów i komponentów. Komponent to specyficzny rodzaj dyrektywy, który pozwala nam korzystać z funkcjonalności komponentów - hermetycznych elementów wielokrotnego użytku dostępnych w naszej aplikacji.",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Czym jest NgModule?",
+                "answer": "Moduły (ngModules) są logicznymi granicami w aplikacji. Służą one do podzielenia aplikacji w celu wyodrębnienia jej funkcjonalności.",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Czym są metadane?",
+                "answer": "Metadane są używane do “ozdabiania” klasy, dzięki czemu można skonfigurować oczekiwane jej zachowanie. Metadane są reprezentowane przez tzw. dekoratory.",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Czym są Guardy",
+                "answer": "Guardy są implementowane jako serwisy, które należy zapewnić, więc z reguły tworzymy je jako klasy @Injectable. Guardy zwrócą wartość prawdziwą, jeśli użytkownik ma dostęp do route’a lub fałszywą, jeśli nie ma dostępu. Guardy mogą również zwrócić Observable lub Promise, które później przekształcają się w wartość logiczną w przypadku gdy guard nie może od razu odpowiedzieć na pytanie.",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Czym są Resolvers?",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Jakie są różnice pomiędzy Observables i Promises",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Kiedy korzystać z unsubscribe?",
+                "answer": "Gdy dane z jakiegoś strumienia przestają być nam potrzebne, powinniśmy pamiętać o “zabiciu” subskrypcji danego strumienia w celu uniknięcia wycieków pamięci.",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "RxJS: Higher-Order Mapping Operators - po co i dlaczego?",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Jakie znasz  Higher-Order Mapping Operators?",
+                "answer": "concatMap, exhaustMap, switchMap, mergeMap",
+                "link": ""
+            }
+        ]
+    },
+    "react": {
+        "content": [
+            {
+                "id": 1,
+                "question": "Jakie znasz wzorce projektowe w React?",
+                "answer": "High Order Component, Destructuring props, Function component, JSX spread attributes / forward props, Render props",
+                "link": ""
+            },
+            {
+                "id": 2,
+                "question": "co wiesz o HOC?",
+                "answer": "High Order Component to funkcja, która przyjmuje komponent jako parametr i zwraca nowy. Robi to, dodając własne propsy, opakowując go w wrapper lub wykonując na nim inne operacje. Z tej funkcji można intensywnie korzystać przy okazji używania ‘Reduxa’, a mianowicie, gdy za pomocą funkcji connect “wstrzykujemy” akcje oraz propsy do naszego komponentu.",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "question": "Co wiesz o React Reconciliation?",
+                "answer": "React Reconciliation to wyrenderowanie obiektu JSX w drzewie DOM. Ten złożony proces zawiera porównania, które pozwolą zdecydować, czy docelowy element może zostać użyty ponownie, czy też musimy stworzyć nowy. Dodatkowo zostają dodane również atrybuty do węzła, takie jak class, czy id oraz wyrenderowaniu tekstu danego elementu i/lub jego zagnieżdżonej struktury. Dla każdego zagnieżdżenia przeprowadzamy ten sam proces.",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Jak działa Virtual DOM?",
+                "answer": "Virtual DOM to obiekt reprezentujący stan drzewa DOM. Wykorzystywany jest do obserwacji zmian w strukturze aplikacji i renderowania ich w drzewie DOM.",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "question": "Jakie są zalety i wady Virtual DOM?",
+                "answer": "Główną zaletą jest możliwość precyzyjnego określenia, czy zaszły jakieś zmiany w naszej aplikacji. Dzięki temu możemy wyrenderować określoną część aplikacji. Ma to wpływ na performance naszej aplikacji oraz wszystkie węzły z pozostałej jej części, zachowują swój niezmieniony stan. Do wad można zaliczyć potrzebę ciągłej kontroli nad zachodzącymi zmianami oraz konieczność trzymania całego obiektu DOM w pamięci.",
+                "link": ""
+            },
+            {
+                "id": 6,
+                "question": "Jaki jest cel używania React Refs? ",
+                "answer": "React Refs tworzą nam referencje do elementu. Dzięki temu mamy dostęp do pojedynczego elementu, bez potrzeby użycia `querySelector()`.",
+                "link": ""
+            }
+        ]
+    },
+    "programming": {
+        "numberOfQuestions": 3,
+        "content": [
+            {
+                "id": 1,
+                "question": "Co to jest DOM?",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 2,
+                "question": "Na czym polega Wzorzec Modułu (Revealing Module Pattern)?",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 3,
+                "question": "Co to jest box-model?",
+                "answer": "Model pudełkowy pozwala nam precyzyjnie określić wymiary elementu HTML na stronie. Każdy z elementów na stronie można traktować jako prostokąt o określonych wymiarach, który może posiadać wypełnienie (padding), obramowanie (border) oraz margines (margin). Każdy element generuje w dokumencie prostokątny obszar zwany pudełkiem (ang. Box model). Pudełko składa się z: Zawartości (content), otaczających marginesów wewnętrznych (padding), obramowania (border), marginesów (margin).",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "Czym różni się ID od klasy?",
+                "answer": "ID może w całym kodzie wystąpić tylko raz, jest przypisane do jednego elementu. Klasa może być nadana wielu elementom, przez co będą miały ujednolicony wygląd.",
+                "link": ""
+            },
+            {
+                "id": 5,
+                "question": "Co to jest API?",
+                "answer": "Interfejs programistyczny aplikacji(application programming interface) to sposób, rozumiany jako ściśle określony zestaw reguł i ich opisów, w jaki programy komputerowe komunikują się między sobą. Definiuje się go na poziomie kodu źródłowego dla składników oprogramowania, na przykład aplikacji, bibliotek, systemu operacyjnego. Zadaniem interfejsu programowania aplikacji jest dostarczenie odpowiednich specyfikacji podprogramów, struktur danych, klas obiektów i wymaganych protokołów komunikacyjnych.",
+                "link": ""
+            },
+            {
+                "id": 6,
+                "question": "W jakiej lokalizacji na dysku twardym przechowywany są ‘ciasteczka’?",
+                "answer": "Przechowywanie plików cookie uzależnione jest od systemu operacyjnego i przeglądarki. Niektóre z nich przechowywane są w folderze instalacyjnym przeglądarki, inne w specjalnych lokalizacjach w folderze Windows lub też w ‘Dokumentach’ konkretnego użytkownika.",
+                "link": ""
+            },
+            {
+                "id": 7,
+                "question": "Wyjaśnij różnice między synchronicznym a asynchronicznym kodem.",
+                "answer": "Kod synchroniczny oznacza, że możesz wykonać tylko jedną rzecz w tym samym czasie - coś musi się skończyć, by coś innego mogło się zacząć. Program jest wykonywany linia po linii. Asynchroniczny natomiast oznacza, że możesz wykonać kilka rzeczy w tym samym czasie i nie musisz czekać na ich wykonanie, aby przejść do kolejnych.",
+                "link": ""
+            },
+            {
+                "id": 8,
+                "question": "Jakie są różnice pomiędzy defined' oraz 'not defined'?",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 9,
+                "question": "Na czym polega Long Polling i do czego jest wykorzystywane?",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 10,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 11,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            },
+            {
+                "id": 4,
+                "question": "",
+                "answer": "",
+                "link": ""
+            }
+        ]
+    }
+}

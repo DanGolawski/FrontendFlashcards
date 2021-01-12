@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "frontendflashcards"
+    }
+  },
+  "defaultProject": "frontendflashcards",
+  "cli": {
+    "analytics": "170c9050-8a1a-4f2d-8f72-e3d765f0ed68"
+  }
 }

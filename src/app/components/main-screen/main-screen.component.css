@@ -1,0 +1,35 @@
+#mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background: #343434;
+    overflow: hidden;
+}
+
+#technologyBackground {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+}
+
+#blogButton {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    background: url("../../../assets/icons/blog.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-radius: 50%; */
+    top: -6vw;
+    right: 2vw;
+    cursor: pointer;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}

@@ -1,0 +1,10 @@
+<div id="container">
+    <div id="papersheet" [class.rotated]="rotateElement" [ngStyle]="{backgroundColor: cardColor}">
+        <div id="backgroundLogo"></div>
+        <span id="questionField" class="textField">{{ currentContent.question }}</span>
+        <div class="card" [ngStyle]="answerCardStyles">
+            <span id="answerField" class="textField">{{ currentContent.answer }}</span>
+        </div>
+    </div>
+    <div id="nextButton" (click)="showNextCard()"></div>
+</div>
