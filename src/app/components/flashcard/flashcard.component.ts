@@ -80,16 +80,17 @@ export class FlashcardComponent implements OnInit {
   }
 
   private changeBackgroundIcon() {
-    let imageUrl = '../../assets/icons/';
+    let classSet = '';
     switch (this.currentContent.technology) {
-      case 'javascript': imageUrl = `${imageUrl}javascript.png`; break;
-      case 'html': imageUrl = `${imageUrl}html5.png`; break;
-      case 'css': imageUrl = `${imageUrl}css3.png`; break;
-      case 'jquery': imageUrl = `${imageUrl}jquery.png`; break;
-      case 'angular': imageUrl = `${imageUrl}angular.png`; break;
-      case 'react': imageUrl = `${imageUrl}react.png`; break;
+      case 'javascript': classSet = `javascript`; break;
+      case 'html': classSet = `html`; break;
+      case 'css': classSet = `css3`; break;
+      case 'jquery': classSet = `jquery`; break;
+      case 'angular': classSet = `angular`; break;
+      case 'react': classSet = `react`; break;
     }
-    this.BackgroundIcon.style.backgroundImage = `url(${imageUrl})`;
+    this.BackgroundIcon.setAttribute('class', '');
+    this.BackgroundIcon.classList.toggle(classSet);
   }
 
   private fitTextForField(field: HTMLElement) {

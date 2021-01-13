@@ -45,6 +45,25 @@
     background-size: contain;
 }
 
+.javascript {
+    background: url('../../../assets/icons/javascript.png');
+}
+.html {
+    background: url('../../../assets/icons/html5.png');
+}
+.css {
+    background: url('../../../assets/icons/css3.png');
+}
+.jquery {
+    background: url('../../../assets/icons/jquery.png');
+}
+.angular {
+    background: url('../../../assets/icons/angular.png');
+}
+.react {
+    background: url('../../../assets/icons/react.png');
+}
+
 .textField {
     position: absolute;
     width: 96%;
