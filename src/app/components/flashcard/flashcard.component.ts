@@ -80,7 +80,7 @@ export class FlashcardComponent implements OnInit {
   }
 
   private changeBackgroundIcon() {
-    let imageUrl = '../../../assets/icons/';
+    let imageUrl = '../../assets/icons/';
     switch (this.currentContent.technology) {
       case 'javascript': imageUrl = `${imageUrl}javascript.png`; break;
       case 'html': imageUrl = `${imageUrl}html5.png`; break;

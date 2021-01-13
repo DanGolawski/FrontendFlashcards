@@ -33,7 +33,6 @@ export class MainScreenComponent implements OnInit {
   }
 
   setBlogLink(linkURL: string): void {
-    console.log('BLOG')
     this.blogLinkURL = linkURL;
     this.blogButton.style.top = '-6vw';
     if (this.blogLinkURL) {
