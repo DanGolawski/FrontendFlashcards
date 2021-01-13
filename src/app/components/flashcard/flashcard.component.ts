@@ -82,12 +82,12 @@ export class FlashcardComponent implements OnInit {
   private changeBackgroundIcon() {
     let classSet = '';
     switch (this.currentContent.technology) {
-      case 'javascript': classSet = `javascript`; break;
-      case 'html': classSet = `html`; break;
-      case 'css': classSet = `css`; break;
-      case 'jquery': classSet = `jquery`; break;
-      case 'angular': classSet = `angular`; break;
-      case 'react': classSet = `react`; break;
+      case 'javascript': classSet = 'javascript'; break;
+      case 'html': classSet = 'html'; break;
+      case 'css': classSet = 'css'; break;
+      case 'jquery': classSet = 'jquery'; break;
+      case 'angular': classSet = 'angular'; break;
+      case 'react': classSet = 'react'; break;
     }
     this.BackgroundIcon.setAttribute('class', '');
     this.BackgroundIcon.classList.toggle(classSet);
