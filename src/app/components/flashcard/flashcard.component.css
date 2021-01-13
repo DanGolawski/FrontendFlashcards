@@ -127,7 +127,7 @@
     opacity: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px) and (orientation: portrait) {
     #container {
         margin-top: 0;
         width: 90vw;

@@ -124,7 +124,8 @@ export class FlashcardComponent implements OnInit {
       }; break;
       case 'jquery': {
         this.cardColor = '#1169AE';
-        this.answerCardStyles = { color: '#1169AE', backgroundColor: 'black' }
+        // this.cardColor = '#FFFFFF';
+        this.answerCardStyles = { color: '#FFFFFF', backgroundColor: 'black' }
       }; break;
       case 'angular': {
         this.cardColor = '#DD0031';
